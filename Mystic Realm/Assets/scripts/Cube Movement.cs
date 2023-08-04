@@ -50,9 +50,6 @@ public class CubeMovement : MonoBehaviour
         {
             takedamage(10);
         }
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            takedamage(20);
-        }
+
     }
 }

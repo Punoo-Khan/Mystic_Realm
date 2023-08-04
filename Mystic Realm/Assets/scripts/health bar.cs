@@ -18,5 +18,6 @@ public class healthbar : MonoBehaviour
     {
         slider.value = health;
         fill.color = gradient.Evaluate(slider.normalizedValue);
+        Debug.Log("GOD DAMN");
     }
 }
