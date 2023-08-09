@@ -43,13 +43,35 @@ public class CubeMovement : MonoBehaviour
     {
         currenthealth -= damage;
         healthbar.sethealth(currenthealth);
+        if (currenthealth <= 0)
+        {
+            Destroy(gameObject);
+            Debug.Log("LMAO DED LOSER ");
+            QuitGame();
+        }
+            
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag =="tower")
+        if(collision.gameObject.tag =="enemy")
         {
             takedamage(10);
         }
 
     }
+    public void QuitGame()
+    {
+        // If we are running in a standalone build of the game
+#if UNITY_STANDALONE
+        // Quit the application
+        Application.Quit();
+#endif
+
+        // If we are running in the editor
+#if UNITY_EDITOR
+        // Stop playing the scene
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+    }
+
 }

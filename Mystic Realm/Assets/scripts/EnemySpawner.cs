@@ -22,7 +22,7 @@ public class EnemySpawner : MonoBehaviour
         // Generate a random position within the spawn area
         Vector3 spawnPosition = new Vector3(
             Random.Range(-spawnAreaSize.x / 2, spawnAreaSize.x / 2),
-            0,
+            spawnAreaSize.y,
             Random.Range(-spawnAreaSize.z / 2, spawnAreaSize.z / 2)
         );
 

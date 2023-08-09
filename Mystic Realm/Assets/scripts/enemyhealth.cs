@@ -29,7 +29,7 @@ public class enemyhealth : MonoBehaviour
         if (collision.gameObject.tag == "bullet")
         {
             takedamage(20);
-            Debug.Log("ahh");
+           /* Debug.Log("ahh")*/;
         }
 
     }

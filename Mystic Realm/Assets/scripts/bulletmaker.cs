@@ -27,7 +27,7 @@ public class BulletMaker : MonoBehaviour
             {
                 if (hitColliders[i].gameObject.tag == "enemy")
                 {
-                    Debug.Log("i am here");
+                    /*Debug.Log("i am here");*/
                     canShoot = false;
                     bulletCount++;
 

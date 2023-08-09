@@ -29,7 +29,7 @@ public class Navigationscript : MonoBehaviour
         else
         {
             enemy.destination = transform.position; // Stop the enemy
-            Debug.Log("hello jani");
+           /* Debug.Log("hello jani");*/
         }
     }
     void OnCollisionEnter(Collision collision)
@@ -37,7 +37,7 @@ public class Navigationscript : MonoBehaviour
         // Check if the collided object is the tower
         if (collision.gameObject.transform == tower)
         {
-            Debug.Log("hello");
+          /*  Debug.Log("hello");*/
             enemy.destination = transform.position; // Stop the enemy
         }
     }
