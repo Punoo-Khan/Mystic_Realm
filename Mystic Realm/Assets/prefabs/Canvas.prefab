@@ -86,7 +86,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &6164734176515706191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2808494553971752970, guid: 809440de1ad60f74d8eb81e08df1039c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 33.7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2808494553971752970, guid: 809440de1ad60f74d8eb81e08df1039c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -203,11 +203,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2808494553971752970, guid: 809440de1ad60f74d8eb81e08df1039c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 10.4
+      value: 13.62336
       objectReference: {fileID: 0}
     - target: {fileID: 2808494553971752970, guid: 809440de1ad60f74d8eb81e08df1039c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.7800007
       objectReference: {fileID: 0}
     - target: {fileID: 2808494553971752970, guid: 809440de1ad60f74d8eb81e08df1039c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -223,7 +223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3483674542120019630, guid: 809440de1ad60f74d8eb81e08df1039c, type: 3}
       propertyPath: m_Value
-      value: 60
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6866669733337189512, guid: 809440de1ad60f74d8eb81e08df1039c, type: 3}
       propertyPath: m_Color.b

@@ -21,7 +21,7 @@ public class enemyhealth : MonoBehaviour
     {
         currenthealth -= damage;
         healthbar.sethealth(currenthealth);
-        if (currenthealth == 0)
+        if (currenthealth <= 0)
             Destroy(gameObject);
     }
     private void OnCollisionEnter(Collision collision)

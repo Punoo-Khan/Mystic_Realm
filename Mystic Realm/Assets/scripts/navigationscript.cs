@@ -7,7 +7,7 @@ public class Navigationscript : MonoBehaviour
 {
     public Transform tower;
     public NavMeshAgent enemy;
-    public float stoppingDistance = 1.0f; // The distance at which the enemy should stop moving towards the tower
+    public float stoppingDistance = 0.5f; // The distance at which the enemy should stop moving towards the tower
 
     void Start()
     {
@@ -24,10 +24,12 @@ public class Navigationscript : MonoBehaviour
         if (distance > stoppingDistance)
         {
             enemy.destination = tower.position;
+
         }
         else
         {
             enemy.destination = transform.position; // Stop the enemy
+            Debug.Log("hello jani");
         }
     }
     void OnCollisionEnter(Collision collision)
@@ -35,6 +37,7 @@ public class Navigationscript : MonoBehaviour
         // Check if the collided object is the tower
         if (collision.gameObject.transform == tower)
         {
+            Debug.Log("hello");
             enemy.destination = transform.position; // Stop the enemy
         }
     }
