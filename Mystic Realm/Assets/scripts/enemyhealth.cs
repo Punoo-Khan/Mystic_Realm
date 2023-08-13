@@ -22,14 +22,26 @@ public class enemyhealth : MonoBehaviour
         currenthealth -= damage;
         healthbar.sethealth(currenthealth);
         if (currenthealth <= 0)
+        {
+            if (transform.parent != null)
+            {
+                Destroy(transform.parent.gameObject);
+            }
             Destroy(gameObject);
+            gamemanager.enemyCount--;
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "bullet")
+
+        if (collision.gameObject.tag == "bullet" )
         {
             takedamage(20);
-           /* Debug.Log("ahh")*/;
+           
+        }
+        if(collision.gameObject.tag == "special attack")
+        {
+            takedamage(100);
         }
 
     }

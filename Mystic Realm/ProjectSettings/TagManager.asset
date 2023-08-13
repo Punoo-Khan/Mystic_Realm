@@ -9,6 +9,7 @@ TagManager:
   - bullet
   - enhealth
   - plane
+  - special attack
   layers:
   - Default
   - TransparentFX

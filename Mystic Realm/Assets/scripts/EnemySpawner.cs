@@ -7,13 +7,14 @@ public class EnemySpawner : MonoBehaviour
     public GameObject enemyPrefab; // The enemy prefab
     public int enemyCount = 10; // Number of enemies to spawn
     public Vector3 spawnAreaSize = new Vector3(10, 0, 10); // The size of the area within which enemies will be spawned
-
+    public gamemanager gamemanager;
     // Start is called before the first frame update
     void Start()
     {
         for (int i = 0; i < enemyCount; i++)
         {
             SpawnEnemy();
+            gamemanager.enemyCount++;
         }
     }
 

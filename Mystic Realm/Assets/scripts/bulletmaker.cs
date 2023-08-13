@@ -8,7 +8,7 @@ public class BulletMaker : MonoBehaviour
     public Transform spawnPoint;
     public float bulletSpeed = 10f;
     public float detectionRadius = 100f;
-    public float reloadTime = 2f; // Time between shots
+    public float reloadTime = 1f; // Time between shots
     public int bulletLimit = 5; // Limit number of bullets
     private int bulletCount = 0; // Current number of bullets fired
     private bool canShoot = true; // Whether or not the player can currently shoot
@@ -19,7 +19,7 @@ public class BulletMaker : MonoBehaviour
         {
             GameObject bulletInstance = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
         }
-        if (canShoot && bulletCount < bulletLimit)
+        if (canShoot )
         {
             Collider[] hitColliders = Physics.OverlapSphere(transform.position, detectionRadius);
             int i = 0;

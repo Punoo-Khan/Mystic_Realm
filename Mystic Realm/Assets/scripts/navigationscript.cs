@@ -20,8 +20,9 @@ public class Navigationscript : MonoBehaviour
         // Check the distance to the tower
         float distance = Vector3.Distance(transform.position, tower.position);
 
+        enemy.destination = tower.position;
         // If the enemy is further away than the stopping distance, move towards the tower
-        if (distance > stoppingDistance)
+        /*if (distance > stoppingDistance)
         {
             enemy.destination = tower.position;
 
@@ -29,16 +30,25 @@ public class Navigationscript : MonoBehaviour
         else
         {
             enemy.destination = transform.position; // Stop the enemy
-           /* Debug.Log("hello jani");*/
-        }
+           *//* Debug.Log("hello jani");*//*
+        }*/
     }
-    void OnCollisionEnter(Collision collision)
+    /*void OnCollisionEnter(Collision collision)
     {
         // Check if the collided object is the tower
-        if (collision.gameObject.transform == tower)
+        if (collision.gameObject.CompareTag("tower"))
         {
-          /*  Debug.Log("hello");*/
-            enemy.destination = transform.position; // Stop the enemy
+            Debug.Log("hello");
+            //enemy.destination = transform.position; // Stop the enemy
+            QuitGame(); // game over we lost
         }
     }
+    public void QuitGame()
+    {
+        // If we are running in the editor
+        #if UNITY_EDITOR
+        // Stop playing the scene
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+    }*/
 }
