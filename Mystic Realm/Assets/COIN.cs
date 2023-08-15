@@ -38,6 +38,9 @@ public class COIN : MonoBehaviour
             case "reaper":
                 value = 30; // Example value for Reaper
                 break;
+            case "witch":
+                value = 20; // Example value for Reaper
+                break;
             // Add more cases as needed
             default:
                 value = 1; // Default value
