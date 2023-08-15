@@ -53,9 +53,21 @@ public class CubeMovement : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag =="enemy")
+        if(collision.gameObject.tag =="ghost")
         {
             takedamage(10);
+        }
+        if (collision.gameObject.tag == "black ghost")
+        {
+            takedamage(20);
+        }
+        if (collision.gameObject.tag == "reaper")
+        {
+            takedamage(40);
+        }
+        if (collision.gameObject.tag == "witch")
+        {
+            takedamage(20);
         }
 
     }

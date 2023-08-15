@@ -119,6 +119,18 @@ PrefabInstance:
       propertyPath: maxhealth
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 5183260341574649226, guid: 6c1ddf4affd78154086de62f8e2e4453, type: 3}
+      propertyPath: coinPrefab
+      value: 
+      objectReference: {fileID: 3703185100328355765, guid: 97c97ddfb04e3e248a3df4d4a24f21b5, type: 3}
+    - target: {fileID: 5183260341574649226, guid: 6c1ddf4affd78154086de62f8e2e4453, type: 3}
+      propertyPath: coinsToDrop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5183260341574649226, guid: 6c1ddf4affd78154086de62f8e2e4453, type: 3}
+      propertyPath: deathParticleEffect
+      value: 
+      objectReference: {fileID: 7032394573905854796, guid: fa7d9a9480b1ac845b7713320717ecfb, type: 3}
     - target: {fileID: 5288880850215862335, guid: 6c1ddf4affd78154086de62f8e2e4453, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -126,6 +138,10 @@ PrefabInstance:
     - target: {fileID: 6235940047043624007, guid: 6c1ddf4affd78154086de62f8e2e4453, type: 3}
       propertyPath: m_Name
       value: ghost Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235940047043624007, guid: 6c1ddf4affd78154086de62f8e2e4453, type: 3}
+      propertyPath: m_TagString
+      value: ghost
       objectReference: {fileID: 0}
     - target: {fileID: 6755771910989719293, guid: 6c1ddf4affd78154086de62f8e2e4453, type: 3}
       propertyPath: m_RootOrder
@@ -171,6 +187,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7111655882682074228, guid: 6c1ddf4affd78154086de62f8e2e4453, type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267949342806032183, guid: 6c1ddf4affd78154086de62f8e2e4453, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8026709331758432223, guid: 6c1ddf4affd78154086de62f8e2e4453, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -178,10 +202,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6235940047043624007, guid: 6c1ddf4affd78154086de62f8e2e4453, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6338769505540465406}
   m_SourcePrefab: {fileID: 100100000, guid: 6c1ddf4affd78154086de62f8e2e4453, type: 3}
 --- !u!4 &8391427406476093943 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6755771910989719293, guid: 6c1ddf4affd78154086de62f8e2e4453, type: 3}
   m_PrefabInstance: {fileID: 3005312751555219210}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9169195150332425037 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6235940047043624007, guid: 6c1ddf4affd78154086de62f8e2e4453, type: 3}
+  m_PrefabInstance: {fileID: 3005312751555219210}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &6338769505540465406
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9169195150332425037}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1
+  m_Center: {x: 0.78, y: 1.0189433, z: 0.3236971}

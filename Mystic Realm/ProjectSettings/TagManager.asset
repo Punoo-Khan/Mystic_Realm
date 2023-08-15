@@ -10,11 +10,16 @@ TagManager:
   - enhealth
   - plane
   - special attack
+  - coin
+  - ghost
+  - black ghost
+  - reaper
+  - witch
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Camera
   - Water
   - UI
   - 

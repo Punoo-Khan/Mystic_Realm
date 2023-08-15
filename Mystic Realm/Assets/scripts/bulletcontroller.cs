@@ -54,7 +54,16 @@ public class bulletcontroller : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "enemy" )
+        if(collision.gameObject.tag == "ghost" )
             Destroy(gameObject);
+        if (collision.gameObject.tag == "black ghost")
+            Destroy(gameObject);
+        if (collision.gameObject.tag == "enemy")
+            Destroy(gameObject);
+        if (collision.gameObject.tag == "reaper")
+            Destroy(gameObject);
+        if (collision.gameObject.tag == "witch")
+            Destroy(gameObject);
+
     }
 }

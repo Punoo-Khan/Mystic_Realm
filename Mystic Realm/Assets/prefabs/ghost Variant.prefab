@@ -143,7 +143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 923611571ef654844b5c023ff6fa86a2, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 923611571ef654844b5c023ff6fa86a2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -320,6 +320,9 @@ MonoBehaviour:
   maxhealth: 20
   currenthealth: 0
   healthbar: {fileID: 5847514615364134430}
+  deathParticleEffect: {fileID: 0}
+  coinPrefab: {fileID: 3703185100328355765, guid: 97c97ddfb04e3e248a3df4d4a24f21b5, type: 3}
+  coinsToDrop: 1
 --- !u!4 &6755771910989719293 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 923611571ef654844b5c023ff6fa86a2, type: 3}
