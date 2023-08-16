@@ -644,4 +644,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turretPrefab: {fileID: 9027574140004435095, guid: 9fe244d3ce2f6e04aa5bb6923d905b17, type: 3}
-  turretCost: 0
+  turretCost: 25
